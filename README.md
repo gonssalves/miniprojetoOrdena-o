@@ -11,3 +11,9 @@ Vinícius:
 • Testar o SelectionSort com 100000 elementos 100 vezes se mostrou uma tarefa complicada, então testamos ele 3 vezes e descobrimos o valor que ele teria em 100 testes.
 
 • A diferença entre o MergeSort e o Híbrido é mínima, o fato do SelectionSort só ser usado em listas com menos de 128 elementos não impactou tanto o algoritmo
+
+
+
+Lucas Ferro:
+
+• Vi diferença no desempenho dos algoritmos. Dependendo da ocasião, cada algoritmo pode ser eficiente. Isso pode variar de acordo com os elementos da lista.
