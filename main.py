@@ -4,7 +4,6 @@ from sorts import *
 if __name__ == '__main__':
   
   lista = list(range(1000, 0, -1))
-
   def teste_sort():
       # print(f'LISTA EMBARALHADA\n{lista}\n')
       selectionSort(lista)
@@ -19,22 +18,8 @@ if __name__ == '__main__':
   print(f'Tempo de duração do teste: {tempo}')
   print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
-    
-  lista = list(range(10000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
-
-  lista = list(range(100000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}')
-  print('#######################################################################################')
-
-
-  lista = list(range(1000))
-
+  lista = list(range(1000, 0, -1))
   def teste_merge():
     
       # print(f'LISTA EMBARALHADA\n{lista}\n')
@@ -42,7 +27,7 @@ if __name__ == '__main__':
       # print(f'A LISTA FOI ORDENADA!')
       # print(lista,'\n\n')
 
-  tempo = timeit.timeit( stmt=teste_sort, number=100)
+  tempo = timeit.timeit( stmt=teste_merge, number=100)
 
   print('\n#######################################################################################')
   print('TESTE FEITO UTILIZANDO O MERGE SORT\n')
@@ -50,31 +35,15 @@ if __name__ == '__main__':
   print(f'Tempo de duração do teste: {tempo}')
   print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
-    
-  lista = list(range(10000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
-
-  lista = list(range(100000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}')
-  print('#######################################################################################')
-
-
-
-  lista = list(range(1000))
-
-
+  lista = list(range(1000, 0, -1))
   def teste_hibrido():
       # print(f'LISTA EMBARALHADA\n{lista}\n')
       hibridoSort(lista)
       # print(f'A LISTA FOI ORDENADA!')
       # print(lista,'\n\n')
 
-  tempo = timeit.timeit( stmt=teste_sort, number=100)
+  tempo = timeit.timeit( stmt=teste_hibrido, number=100)
 
   print('\n#######################################################################################')
   print('TESTE FEITO UTILIZANDO O SELECTION E MERGE SORT\n')
@@ -82,47 +51,19 @@ if __name__ == '__main__':
   print(f'Tempo de duração do teste: {tempo}')
   print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
-    
-  lista = list(range(10000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}\n')
 
 
-  lista = list(range(100000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}')
-  print('#######################################################################################')
-
-
-
-  lista = list(range(1000))
-
-
+  lista = list(range(1000, 0, -1))
   def teste_modificado():
       # print(f'LISTA EMBARALHADA\n{lista}\n')
       mergeModificado(lista)
       # print(f'A LISTA FOI ORDENADA!')
       # print(lista,'\n\n')
 
-  tempo = timeit.timeit( stmt=teste_sort, number=100)
+  tempo = timeit.timeit( stmt=teste_modificado, number=100)
 
   print('\n#######################################################################################')
   print('TESTE FEITO UTILIZANDO MERGE SORT SEM SLICE\n')
   print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
   print(f'Tempo de duração do teste: {tempo}')
   print(f'Tempo médio de duração do teste: {tempo/100}\n')
-
-    
-  lista = list(range(10000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}\n')
-
-
-  lista = list(range(100000, 0, -1))
-  print(f'Teste repetido {100} vezes em uma lista de {len(lista)} elementos')
-  print(f'Tempo de duração do teste: {tempo}')
-  print(f'Tempo médio de duração do teste: {tempo/100}')
-  print('#######################################################################################')
